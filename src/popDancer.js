@@ -1,7 +1,7 @@
 var PopDancer = function(top, left, timeBetweenSteps) {
   
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="http://www.babyandtotshow.com/wp-content/uploads/2014/01/crawing-baby.jpg" class="popDancer" style="width: 100px"></img>');
+  this.$node = $('<img src="ghost.png" class="popDancer" style="width: 100px"></img>');
 };
 
 

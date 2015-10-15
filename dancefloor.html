@@ -7,12 +7,19 @@
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/popDancer.js"></script>
+    <script src="src/cheerDancers.js"></script>
   </head>
   <body>
+    <audio controls>
+  <!-- <source src="horse.ogg" type="audio/ogg"> -->
+  <source src="moveyourfeet.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
     <div class="topbar">
       <span class="title">object dance party</span>
       <button class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</button>
       <button class="addDancerButton" data-dancer-maker-function-name="makePopDancer">add a pop dancer</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="makeCheerDancer">add a cheer dancer</button>
     </div>
     <script src="src/init.js"></script>
   </body>
