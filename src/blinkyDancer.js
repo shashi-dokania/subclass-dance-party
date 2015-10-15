@@ -21,19 +21,30 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   
   Dancer.call(this, top, left, timeBetweenSteps);
+  //this.addImage();
 };
 
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-BlinkyDancer.prototype.step = function() { 
+BlinkyDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   this.$node.toggle();
 };
 
+// BlinkyDancer.prototype.addImage = function() {
+//   var img = document.createElement("img");
+//       img.src = "http://www.babyandtotshow.com/wp-content/uploads/2014/01/crawing-baby.jpg"; 
+//       img.height = 50; 
+//       img.width = 100;
+//   document.body.appendChild(img);
+// };
+
+
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   return new BlinkyDancer(top, left, timeBetweenSteps);
 };
+
 
   //var blinkyDancer = Object.create(makeBlinkyDancer(top, left, timeBetweenSteps));

@@ -26,20 +26,10 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    var dancer1 = dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      Math.random() * 1000
-    );
-    // var dancer2 = dancerMakerFunction(
-    //   $("body").height() * Math.random(),
-    //   $("body").width() * Math.random(),
-    //   Math.random() * 1000
-    // );
+    
     $('body').append(dancer.$node);
-    $('body').append(dancer1.$node);
 
-    window.dancers.push(dancer, dancer1);
+    window.dancers.push(dancer);
   });
 
 });

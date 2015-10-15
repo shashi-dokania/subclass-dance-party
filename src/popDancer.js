@@ -1,6 +1,7 @@
 var PopDancer = function(top, left, timeBetweenSteps) {
   
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<img src="http://www.babyandtotshow.com/wp-content/uploads/2014/01/crawing-baby.jpg" class="popDancer" style="width: 100px"></img>');
 };
 
 
@@ -19,7 +20,10 @@ PopDancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
     top: this.top,
     left: this.left,
-    border: 'solid 10px yellow'
+    // height: 100px,
+    // width: 100px
+    //border: 'solid 10px yellow'
+    //background: url("http://www.babyandtotshow.com/wp-content/uploads/2014/01/crawing-baby.jpg")
   };
   this.$node.css(styleSettings);
 };
